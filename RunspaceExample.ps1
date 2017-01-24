@@ -1,3 +1,8 @@
+#Runspace Example
+#This example uses the code container below to multi-thread the Get-Process cmdlet to multiple locations
+#The $computers array contains the target computers
+#Experiment! Have fun!
+
 $computers = @("SQLSERVERA","SQLSERVERB","SQLSERVERC","SQLSERVERA","SQLSERVERB","SQLSERVERC","SQLSERVERA","SQLSERVERB","SQLSERVERC","SQLSERVERA","SQLSERVERB","SQLSERVERC","SQLSERVERA","SQLSERVERB","SQLSERVERC")
 
 $runspacePool = [RunspaceFactory]::CreateRunspacePool(1, 4)
